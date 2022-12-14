@@ -12,10 +12,13 @@ gethを使用したイーサリアムのプライベートネットワーク（P
 
 git pull を行いソースコードを最新化しておく
 
-以下を実行して、サブモジュールを含んだリポジトリをクローンします
+### 以下コマンドでサブモジュールの取得先変更する
+git config submodule.solidity/src/lib/solidity-stringutils.url https://github.com/Arachnid/solidity-stringutils
+
+### 以下を実行して、サブモジュールを含んだリポジトリをクローンします
 git submodule update --init --recursive 
 
-### Ethereumネットワーク
+### Ethereumネットワーク 
 
 当プロジェクトのrootディレクトリにある [README_ja](../README_ja.md) を参照してPOAネットワークを作成・起動してください。
 
